@@ -1,0 +1,16 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+    <md-toolbar layout="row" class="sin-fondo" layout-align="end center">
+        <md-button class="md-icon-button" ng-click="cont.toggleSidenav()" aria-label="Cierra el menú lateral">
+            <i class="fa fa-close"></i>
+        </md-button>
+    </md-toolbar>
+    <img class="logo" src="https://cdn1.educacion2.com/wp-content/uploads/aulaPlaneta.png">
+    <md-list>
+        <md-list-item ng-repeat="pag in cont.paginas track by $index">
+            <md-button ng-href="#/{{$index+1}}">
+                <i class="fa fa-file-text-o fa-fw"></i>
+                {{pag.titulo}}
+            </md-button>
+        </md-list-item>
+    </md-list>
+</md-sidenav>

@@ -1,0 +1,32 @@
+<div ng-controller="contenido as cont">
+    <ng-include src="cont.header" class="encabezado"></ng-include>
+    <div flex layout="row" class="contenedor">
+        <div ng-controller="sidenav as sn">
+            <ng-include src="cont.sidenav"></ng-include>
+        </div>
+        <md-content flex id="contenido">
+            <div class="lock-size paginacion" layout="row" layout-align="end center">
+                <md-fab-toolbar md-open="cont.fabAbierto" md-direction="left">
+                    <md-fab-trigger>
+                        <md-button aria-label="menu" class="md-fab md-primary">
+                            <md-tooltip md-direction="top" md-visible="tooltipVisible">Paginación</md-tooltip>
+                            <div class="icono-fab">
+                                <i class="fa fa-ellipsis-h fa-lg"></i>
+                            </div>
+                        </md-button>
+                    </md-fab-trigger>
+                    <md-toolbar>
+                        <md-fab-actions class="md-toolbar-tools">
+                            <div ng-repeat="pag in cont.numPags track by $index">
+                                <md-button class="md-icon-button" aria-label="Ir a la página {{pag}}" ng-href="#/{{cont.numPags.length - $index}}">
+                                    {{pag}}
+                                </md-button>
+                            </div>
+                        </md-fab-actions>
+                    </md-toolbar>
+                </md-fab-toolbar>
+            </div>
+            <ng-include src="cont.contenido" class="cuerpo"></ng-include>
+        </md-content>
+    </div>
+</div>

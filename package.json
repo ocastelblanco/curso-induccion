@@ -1,0 +1,39 @@
+{
+  "name": "curso-induccion",
+  "author": "Oliver Castelblanco",
+  "version": "0.0.1",
+  "description": "Curso de inducción docente para el Politécnico Grancolombiano",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.8",
+    "angular-route": "^1.5.7",
+    "angular-sanitize": "^1.5.8",
+    "angular-touch": "^1.5.7",
+    "bourbon": "^4.2.7",
+    "font-awesome": "^4.6.3",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocastelblanco/curso-induccion"
+  },
+  "keywords": [
+    "curso",
+    "induccion",
+    "curso induccion",
+    "politecnico"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocastelblanco/curso-induccion/issues"
+  },
+  "homepage": "https://github.com/ocastelblanco/curso-induccion#readme"
+}
